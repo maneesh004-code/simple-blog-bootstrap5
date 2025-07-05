@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Bootstrap 5 Blog Layout</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-journal-code"></i> TechBlog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to TechBlog</h1>
+                    <p class="lead mb-4">Discover the latest trends in technology, web development, and digital innovation</p>
+                    <a href="#blog-posts" class="btn btn-light btn-lg">Explore Posts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-5" id="blog-posts">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Latest Blog Posts</h2>
+                    <p class="lead text-muted">Stay updated with our latest articles and insights</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop" 
+                             class="card-img-top" alt="JavaScript ES6 Features">
+                        <div class="card-body d-flex flex-column">
+                            <div class="blog-meta mb-2">
+                                <i class="bi bi-calendar3"></i> March 15, 2024
+                                <span class="ms-3"><i class="bi bi-person"></i> John Doe</span>
+                            </div>
+                            <h5 class="card-title">Modern JavaScript: ES6+ Features You Should Know</h5>
+                            <p class="card-text flex-grow-1">
+                                Explore the latest JavaScript features that will make your code more efficient and readable. 
+                                From arrow functions to async/await, discover what's new in ES6+.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-primary me-2">JavaScript</span>
+                                <span class="badge bg-secondary">Frontend</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=400&h=200&fit=crop" 
+                             class="card-img-top" alt="React Hooks">
+                        <div class="card-body d-flex flex-column">
+                            <div class="blog-meta mb-2">
+                                <i class="bi bi-calendar3"></i> March 10, 2024
+                                <span class="ms-3"><i class="bi bi-person"></i> Jane Smith</span>
+                            </div>
+                            <h5 class="card-title">React Hooks: A Complete Guide for Beginners</h5>
+                            <p class="card-text flex-grow-1">
+                                Learn how to use React Hooks effectively to manage state and side effects in functional components. 
+                                Complete with examples and best practices.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-info me-2">React</span>
+                                <span class="badge bg-secondary">Tutorial</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=200&fit=crop" 
+                             class="card-img-top" alt="CSS Grid Layout">
+                        <div class="card-body d-flex flex-column">
+                            <div class="blog-meta mb-2">
+                                <i class="bi bi-calendar3"></i> March 8, 2024
+                                <span class="ms-3"><i class="bi bi-person"></i> Mike Johnson</span>
+                            </div>
+                            <h5 class="card-title">Mastering CSS Grid: Layout Made Simple</h5>
+                            <p class="card-text flex-grow-1">
+                                CSS Grid revolutionizes web layouts. Learn how to create complex, responsive designs 
+                                with this powerful layout system through practical examples.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-success me-2">CSS</span>
+                                <span class="badge bg-secondary">Design</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop" 
+                             class="card-img-top" alt="Node.js Backend">
+                        <div class="card-body d-flex flex-column">
+                            <div class="blog-meta mb-2">
+                                <i class="bi bi-calendar3"></i> March 5, 2024
+                                <span class="ms-3"><i class="bi bi-person"></i> Sarah Wilson</span>
+                            </div>
+                            <h5 class="card-title">Building RESTful APIs with Node.js and Express</h5>
+                            <p class="card-text flex-grow-1">
+                                Step-by-step guide to creating robust RESTful APIs using Node.js and Express. 
+                                Includes authentication, validation, and error handling.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-warning me-2">Node.js</span>
+                                <span class="badge bg-secondary">Backend</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=200&fit=crop" 
+                             class="card-img-top" alt="Python Programming">
+                        <div class="card-body d-flex flex-column">
+                            <div class="blog-meta mb-2">
+                                <i class="bi bi-calendar3"></i> March 3, 2024
+                                <span class="ms-3"><i class="bi bi-person"></i> David Chen</span>
+                            </div>
+                            <h5 class="card-title">Python for Data Science: Getting Started</h5>
+                            <p class="card-text flex-grow-1">
+                                Introduction to Python libraries for data science including Pandas, NumPy, and Matplotlib. 
+                                Perfect for beginners entering the data science field.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-danger me-2">Python</span>
+                                <span class="badge bg-secondary">Data Science</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" 
+                             class="card-img-top" alt="Web Development">
+                        <div class="card-body d-flex flex-column">
+                            <div class="blog-meta mb-2">
+                                <i class="bi bi-calendar3"></i> March 1, 2024
+                                <span class="ms-3"><i class="bi bi-person"></i> Emily Rodriguez</span>
+                            </div>
+                            <h5 class="card-title">Web Performance Optimization: Best Practices</h5>
+                            <p class="card-text flex-grow-1">
+                                Learn essential techniques to optimize your website's performance. From image optimization 
+                                to code splitting, improve your site's speed and user experience.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-dark me-2">Performance</span>
+                                <span class="badge bg-secondary">Optimization</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary btn-lg" id="loadMoreBtn">Load More Posts</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-4">Subscribe to Our Newsletter</h3>
+                    <p class="text-muted mb-4">Get the latest tech articles delivered to your inbox</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" id="emailInput">
+                                <button class="btn btn-primary" type="button" id="subscribeBtn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="bi bi-journal-code"></i> TechBlog</h5>
+                    <p class="text-muted">
+                        Your go-to source for the latest in technology, web development, and digital innovation. 
+                        Stay informed, stay ahead.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6>Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">JavaScript</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">React</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Node.js</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Python</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Follow Us</h6>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-github"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 TechBlog. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted mb-0">Built with Bootstrap 5</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
